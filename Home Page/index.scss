@@ -1,0 +1,314 @@
+$roboto: 'Roboto', sans-serif;
+$quantico: 'Quantico', sans-serif;
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$teritary-color: #1976d2;
+$advance-color: #fffbfb;
+$mobile: 768px;
+$laptop: 1250px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $roboto;
+    font-style: normal;
+}
+
+.header{
+    background-image: url(https://github.com/budiong054/DuFanvar_Project/blob/main/Images/green_vegetation.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+    // align-items: center;
+    // flex-direction: column;
+    
+    .header_container{
+        display: flex;
+        justify-content: center;
+
+        &-wrap{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 80%;
+            height: 45%;
+            // border:solid white 2px;
+    
+            &__logo{
+                flex-basis: 30%;
+                height: 95%;
+                // border:solid white 2px;
+                img{
+                    width: 225px;
+                    // height: 100%;
+                }
+            }
+    
+            &__nav-bar{
+                background-color: $primary-color;
+                flex-grow: 1;
+                flex-basis: 60%;
+                height: 19%;
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                justify-content: center;
+        
+        
+                ul{
+        
+                    li{
+                        display: inline-block;
+                        padding: 8px 20px;
+                        list-style: none;
+        
+                        a{
+                            text-decoration: none;
+                            color: $secondary-color;
+                            font-size: 1.2rem;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fa{
+            display: none;
+        }
+    
+    }
+
+    &__textbox{
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-58%,-50%);
+
+        h3{
+            font-family: $quantico;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 54px;
+            word-spacing: 5px;
+            // letter-spacing: px;
+            color: $secondary-color;
+            text-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.49);
+        }
+    }
+    
+}
+
+.about_dufanvar{
+
+    margin-top: 4.5%;
+
+
+    &__heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .h1{
+            width: 27.5%;
+            text-align: center;
+            // pa
+
+            h1{
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 70px;
+                letter-spacing: 18px;
+                color: $teritary-color;
+                text-shadow: 0px 2px 2px rgba($color: #000000, $alpha: 0.25);
+            }
+        }
+        .hr{
+            // text-align: center;
+            width: 22%;
+            border-bottom: 4px $primary-color solid;
+            // justify-content: center;
+        }
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5% ;
+
+        &__image{
+            flex-basis: 27.5%;
+            
+            img{
+                width: 100%;
+            }
+        }
+
+        &__article{
+            flex-basis: 45%;
+            padding-left: 2%;
+            
+
+            p{
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 28px;
+                color: $primary-color;
+            }
+        }
+
+        // [class^="about_dufanvar__wrap__"]{
+        //     width: 40%;
+        // }
+    }
+}
+
+.services{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+    h1{
+        font-size: 40px;
+        line-height: 70px;
+        font-weight: 600;
+        color: $teritary-color;
+        
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5%;
+
+        &__image{
+            flex-basis: 27.5%;
+
+            img{
+                width: 100%;
+            }
+        }
+        
+        &__article{
+            flex-basis: 45%;
+            padding-left: 5%;
+        }
+
+        h3{
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 41px;
+            color: $primary-color;
+        }
+        p{
+            font-weight: 300;
+            line-height: 28px;
+            font-size: 18px;
+            color: rgba($color: #000000, $alpha: 0.66);
+            
+        }
+        .readmore{
+            font-size: 18px;
+            line-height: 33px;
+            font-weight: normal;
+            padding: .5px 22.5px;
+            margin-top: 8%;
+            width: 200px;
+        }
+    }
+}
+
+.btn{
+    color: $secondary-color;
+    background: $teritary-color;
+    border-radius: 10px 10px 10px 0;
+    
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    
+    h2{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 75px;
+        color: $primary-color;
+    }
+
+    .sign-in{
+        font-size: 30px;
+        line-height: 59px;
+        font-weight: normal;
+        padding: .5px 2px;
+        margin-top: 1.25%;
+        width: 350px;
+    }
+}
+
+
+@media (max-width:$laptop) {
+    .header_container-wrap{
+        flex-basis: 85%;
+        &__logo{
+            flex-basis: 30%;
+            height: 80%;
+            // border:solid white 2px;
+            img{
+                width: 150px;
+                // height: 100%;
+            }
+        }
+        &__nav-bar{
+            ul{
+                li{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width:$mobile) {
+    .header{
+
+        .header_container-wrap{
+            flex-direction: column-reverse;
+            margin-top: 20px;
+            flex-basis: 90%;
+
+            &__logo{
+                align-items: center;
+            }
+            &__nav-bar{
+                display: none;
+            }
+            .fa{
+                display: block;
+                align-self: flex-end;
+                color: $secondary-color;
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
