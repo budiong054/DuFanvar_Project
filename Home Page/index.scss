@@ -3,6 +3,8 @@ $quantico: 'Quantico', sans-serif;
 $primary-color: #000000;
 $secondary-color: #ffffff;
 $teritary-color: #1976d2;
+$footer-color: #666666;
+$dark-color: #333333;
 $advance-color: #fffbfb;
 $mobile: 768px;
 $laptop: 1250px;
@@ -238,6 +240,7 @@ body{
     color: $secondary-color;
     background: $teritary-color;
     border-radius: 10px 10px 10px 0;
+    border: none;
     
 }
 
@@ -255,12 +258,133 @@ body{
     }
 
     .sign-in{
-        font-size: 30px;
+        font-size: 25px;
         line-height: 59px;
         font-weight: normal;
-        padding: .5px 2px;
+        padding: 0px 2px;
         margin-top: 1.25%;
-        width: 350px;
+        width: 290px;
+        // height: 45px;
+    }
+}
+
+.footer{
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    width: 100%;
+    color: $secondary-color;
+    margin-top: 4.5%;
+    // height: 500px;
+
+    &-wrap{
+        background-color: $footer-color;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        // gap: 3.5%;
+        // margin-top: 7.5%;
+
+        h2{
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 70px;
+        }
+        p{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+        }
+     
+
+        &__form{
+            flex-basis: 25%;
+            margin-top: 3.5%;
+
+            .input{
+                width: 225px;
+                height: 40px;
+                padding: 5px 15px;
+                border-radius: 10px 10px 10px 0px;
+                margin: 3px 0px;
+                border: none;
+            }
+            .textarea{
+                border-radius: 10px 10px 10px 0px;
+                padding: 20px 15px;
+                // display: block;
+                margin-top: 20px;
+                width: 300px;
+                border: none;
+                height: 150px;
+            }
+            .submit{
+                display: block;
+                background-color: $dark-color;
+                color: $secondary-color;
+                padding: 10px 15px;
+                width: 125px;
+                margin-top: 10px;
+                
+            }
+        }
+        &__site-map{
+            flex-basis: 22.5%;
+            margin-top: 3.5%;
+            padding-left: 7.5%;
+
+            ul{
+                margin-top: 20px;
+
+                li{
+                    list-style: none;
+
+                    a{
+                        text-decoration: none;
+                        color: $secondary-color;
+                        font-size: 20px;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+        &__contact{
+            flex-basis: 25%;
+            margin-top: 3.5%;
+            padding-left: 5%;
+            text-align: center;
+
+            [class^="footer-wrap__contact__"]{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                // img{
+                //     padding-right: 7%;
+                // }
+            }
+
+            a{
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 18px;
+                line-height: 42px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+    }
+
+    &_copyright{
+        height: 80px;
+        background-color: $dark-color;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }
 
@@ -310,5 +434,51 @@ body{
                 font-size: 1.75rem;
             }
         }
+    }
+    .footer-wrap{
+        
+        flex-direction: column;
+        height: 1190px;
+        width: 100%;
+        align-items: center;
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2.5%;
+            width: 80%;
+            text-align: center;
+
+            .input{
+                width: 100%;
+            }
+
+            .textarea{
+                width: 100%;
+            }
+            .submit{
+                width:40%;  
+            }
+        }
+
+        &__site-map{
+            margin-top: 50px;
+            width: 80%;
+            text-align: center;
+            padding-left: 0%;
+        }
+
+        &__contact{
+            width: 80%;
+            text-align: center;
+            padding-left:0;
+            margin-top: 30px;
+        }        
+    }
+    .footer_copyright{
+        width: 100%;
+        text-align: center;
     }
 }
