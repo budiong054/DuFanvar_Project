@@ -1,0 +1,88 @@
+@import 'config';
+@import 'utilities';
+@import 'utilities_header';
+
+
+
+.dufanvar__contact{
+    background-color: $primary-color;
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        border: 2px solid white;
+    
+        img{
+            width: 80%;
+        }
+        // .logo-text{
+        //     // color: $secondary-color;
+        // }
+    }
+
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $secondary-color;
+        height: 700px;
+        margin-top: -8%;
+        margin-bottom: -5%;
+        
+
+        &-one{
+            background-color: $teritary-color;
+            flex-basis: 37.5%;
+            border-radius: 10px 10px 10px 0;
+            height: 550px;
+            padding-left: 5%;
+
+            h3{
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 56px;
+                margin: 20px 0px;
+            }
+            
+
+
+            .input{
+                width: 250px;
+                height: 40px;
+                padding: 5px 15px;
+                border-radius: 10px 10px 10px 0px;
+                margin: 3px 0px;
+                border: none;
+                outline: none;
+            }
+            .textarea{
+                border-radius: 10px 10px 10px 0px;
+                padding: 20px 15px;
+                // display: block;
+                margin-top: 20px;
+                width: 300px;
+                border: none;
+                height: 150px;
+            }
+            .submit{
+                display: block;
+                background-color: $dark-color;
+                color: $secondary-color;
+                padding: 10px 15px;
+                width: 125px;
+                margin-top: 10px;
+                
+            }
+        }
+        &-two{
+            flex-basis: 37.5%;
+            margin-left: 5%;
+
+            h2{
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 70px;
+            }
+        }
+    }
+}
