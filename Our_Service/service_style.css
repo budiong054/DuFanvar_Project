@@ -151,6 +151,7 @@ body {
 }
 
 .footer-wrap__form .textarea {
+  outline: none;
   border-radius: 10px 10px 10px 0px;
   padding: 20px 15px;
   margin-top: 20px;
@@ -253,7 +254,7 @@ body {
         flex-basis: 90%;
   }
   .header .header_container-wrap__logo {
-    width: 70%;
+    width: 60%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -376,93 +377,150 @@ body {
   }
 }
 
-.dufanvar__contact {
-  background-color: #000000;
+.background {
+  background-image: url(/Images/Rectangle-193.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 525px;
 }
 
-.dufanvar__contact__logo {
+.dufanvar__service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 2px solid white;
-}
-
-.dufanvar__contact__logo img {
-  width: 80%;
-}
-
-.dufanvar__contact__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
-  height: 700px;
-  margin-top: -8%;
-  margin-bottom: -5%;
+  height: 525px;
 }
 
-.dufanvar__contact__form-one {
-  background-color: #1976d2;
-  -ms-flex-preferred-size: 37.5%;
-      flex-basis: 37.5%;
-  border-radius: 10px 10px 10px 0;
-  height: 550px;
+.dufanvar__service h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 41px;
+  color: #000000;
+}
+
+.dufanvar__service p {
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.dufanvar__service .readmore {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: normal;
+  padding: .5px 22.5px;
+  margin-top: 3.5%;
+  width: 200px;
+}
+
+.dufanvar__service [class^='dufanvar__service_'] {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.dufanvar__service [class$='_article'] {
+  width: 41.5%;
+}
+
+.dufanvar__service [class$='_article']:nth-child(even) {
   padding-left: 5%;
 }
 
-.dufanvar__contact__form-one h3 {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 56px;
-  margin: 20px 0px;
+.dufanvar__service [class$='_image']:nth-child(even) {
+  padding-left: 5%;
 }
 
-.dufanvar__contact__form-one .input {
-  width: 250px;
-  height: 40px;
-  padding: 5px 15px;
-  border-radius: 10px 10px 10px 0px;
-  margin: 3px 0px;
-  border: none;
-  outline: none;
+.dufanvar__service [class$='_image'] {
+  width: 33.5%;
 }
 
-.dufanvar__contact__form-one .textarea {
-  border-radius: 10px 10px 10px 0px;
-  padding: 20px 15px;
-  margin-top: 20px;
-  width: 300px;
-  border: none;
-  height: 150px;
+.dufanvar__service img {
+  width: 100%;
 }
 
-.dufanvar__contact__form-one .submit {
-  display: block;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px 15px;
-  width: 125px;
-  margin-top: 10px;
+.back-to-top {
+  display: none;
 }
 
-.dufanvar__contact__form-two {
-  -ms-flex-preferred-size: 37.5%;
-      flex-basis: 37.5%;
-  margin-left: 5%;
+@media (max-width: 768px) {
+  .mini-header h2 {
+    font-weight: 500;
+    font-size: 32.5px;
+    line-height: 40px;
+    color: #1976d2;
+  }
+  .background {
+    background: none;
+  }
+  .dufanvar__service {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: auto;
+  }
+  .dufanvar__service [class^='dufanvar__service_'] {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .dufanvar__service img {
+    width: 100%;
+  }
+  .dufanvar__service .dufanvar__service_two_image, .dufanvar__service .dufanvar__service_four_image, .dufanvar__service .dufanvar__service_six_image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .dufanvar__service .dufanvar__service_two_article, .dufanvar__service .dufanvar__service_four_article, .dufanvar__service .dufanvar__service_six_article {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .back-to-top {
+    background-color: #c4c4c4;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 45px;
+    margin-top: 30px;
+  }
+  .back-to-top h4 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+  }
 }
 
-.dufanvar__contact__form-two h2 {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 70px;
+.footer {
+  margin-top: 0;
 }
-/*# sourceMappingURL=contact_style.css.map */
+/*# sourceMappingURL=service_style.css.map */

@@ -151,6 +151,7 @@ body {
 }
 
 .footer-wrap__form .textarea {
+  outline: none;
   border-radius: 10px 10px 10px 0px;
   padding: 20px 15px;
   margin-top: 20px;
@@ -253,7 +254,7 @@ body {
         flex-basis: 90%;
   }
   .header .header_container-wrap__logo {
-    width: 70%;
+    width: 60%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -376,28 +377,13 @@ body {
   }
 }
 
-.dufanvar_service {
-  margin-top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.dufanvar__contact {
+  background-color: #000000;
+  height: 880px;
+  margin-bottom: -5%;
 }
 
-.dufanvar_service p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 42px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.dufanvar_service_container {
+.dufanvar__contact__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,46 +392,132 @@ body {
           justify-content: center;
 }
 
-.dufanvar_service_container_image {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  padding-bottom: 5%;
+.dufanvar__contact__logo .figure {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.dufanvar_service_container_image img {
+.dufanvar__contact__logo .figure img {
   width: 100%;
 }
 
-.dufanvar_service_container_article {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+.dufanvar__contact__logo .figure .logo-text {
+  color: #ffffff;
+  margin-left: -27.5%;
+}
+
+.dufanvar__contact__logo .figure .logo-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 70px;
+}
+
+.dufanvar__contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  height: 700px;
+  margin-top: -6.5%;
+}
+
+.dufanvar__contact__form-one {
+  background-color: #1976d2;
+  -ms-flex-preferred-size: 37.5%;
+      flex-basis: 37.5%;
+  border-radius: 10px 10px 10px 0;
+  height: 550px;
   padding-left: 5%;
 }
 
-.dufanvar_service_container_article_cont {
-  width: 80%;
-  margin-top: -3.5%;
+.dufanvar__contact__form-one h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 56px;
+  margin: 20px 0px;
 }
 
-@media (max-width: 768px) {
-  .dufanvar_service_container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .dufanvar_service_container_image {
-    width: 80%;
-  }
-  .dufanvar_service_container_image img {
-    width: 100%;
-  }
-  .dufanvar_service_container_atricle {
-    width: 80%;
-  }
-  .dufanvar_service_container_article_cont {
-    width: 80%;
-    margin-top: 0%;
-  }
+.dufanvar__contact__form-one .input {
+  width: 250px;
+  height: 40px;
+  padding: 5px 15px;
+  border-radius: 10px 10px 10px 0px;
+  margin: 3px 0px;
+  border: none;
+  outline: none;
 }
-/*# sourceMappingURL=service_one_style.css.map */
+
+.dufanvar__contact__form-one .textarea {
+  border-radius: 10px 10px 10px 0px;
+  padding: 20px 15px;
+  margin-top: 20px;
+  width: 300px;
+  border: none;
+  height: 150px;
+  outline: none;
+}
+
+.dufanvar__contact__form-one .submit {
+  display: block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 15px;
+  width: 125px;
+  margin-top: 10px;
+}
+
+.dufanvar__contact__form-two {
+  -ms-flex-preferred-size: 37.5%;
+      flex-basis: 37.5%;
+  margin-left: 5%;
+}
+
+.dufanvar__contact__form-two a {
+  text-decoration: none;
+}
+
+.dufanvar__contact__form-two h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+.dufanvar__contact__form-two_tel, .dufanvar__contact__form-two_mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dufanvar__contact__form-two .label {
+  display: block;
+  margin-left: 2%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #ffffff;
+  margin-bottom: 12.5px;
+}
+
+.dufanvar__contact__form-two .small_label {
+  font-size: 20px;
+  margin-bottom: 7.5;
+}
+/*# sourceMappingURL=contact_style.css.map */

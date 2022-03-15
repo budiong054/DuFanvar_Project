@@ -46,10 +46,33 @@
 }
 
 @media (max-width:$mobile){
+
+    .mini-header{
+
+        h2{
+        font-weight: 500;
+        font-size: 32.5px;
+        line-height: 40px;
+        color: $teritary-color;
+        }
+    }
+
+    
+
     .dufanvar_service{
+
+        p{
+            line-height: 35px;
+            font-size: 1em;
+            color: rgba($color: #000000, $alpha: 0.7);
+            text-align: center;
+            
+        }
 
         &_container{
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             &_image{
                 width: 80%;
@@ -59,8 +82,10 @@
 
             }
 
-            &_atricle{
-                width: 80%;
+            &_article{
+                flex-basis: 80%;
+                border: #000000 2px solid;
+                display: none;
             
             }
 
@@ -71,4 +96,17 @@
             margin-top: 0%;
         }
     }
+}
+
+@media (max-width:320px){
+    .mini-header{
+
+        h2{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: $teritary-color;
+        }
+    }
+
 }

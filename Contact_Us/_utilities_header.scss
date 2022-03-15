@@ -1,0 +1,31 @@
+.header{
+    height: calc(100vh - 76px);
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_container{
+        flex-basis: 100%;
+    }
+}
+.mini-header{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    border: 1px solid rgba($color: #000000, $alpha: 0.5);
+
+    h2{
+        font-weight: 500;
+        font-size: 50px;
+        line-height:40px;
+        color: $teritary-color;
+    }
+}
+
+@media (max-width:$mobile){
+    .header{
+        align-items: flex-start;
+    }
+}

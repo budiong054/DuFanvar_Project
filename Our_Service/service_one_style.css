@@ -151,6 +151,7 @@ body {
 }
 
 .footer-wrap__form .textarea {
+  outline: none;
   border-radius: 10px 10px 10px 0px;
   padding: 20px 15px;
   margin-top: 20px;
@@ -253,7 +254,7 @@ body {
         flex-basis: 90%;
   }
   .header .header_container-wrap__logo {
-    width: 70%;
+    width: 60%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -376,111 +377,106 @@ body {
   }
 }
 
-.dufanvar__service {
+.dufanvar_service {
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 50px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dufanvar_service p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dufanvar_service_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.dufanvar__service [class^='dufanvar__service_'] {
-  margin-top: 60px;
-  margin-bottom: 80px;
+.dufanvar_service_container_image {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-bottom: 5%;
 }
 
-.dufanvar__service [class$='_article'] {
-  width: 41.5%;
-}
-
-.dufanvar__service [class$='_article']:nth-child(even) {
-  padding-left: 5%;
-}
-
-.dufanvar__service [class$='_image']:nth-child(even) {
-  padding-left: 5%;
-}
-
-.dufanvar__service [class$='_image'] {
-  width: 33.5%;
-}
-
-.dufanvar__service img {
+.dufanvar_service_container_image img {
   width: 100%;
 }
 
-.back-to-top {
-  display: none;
+.dufanvar_service_container_article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-left: 5%;
 }
 
-@media (max-width: 650px) {
+.dufanvar_service_container_article_cont {
+  width: 80%;
+  margin-top: -3.5%;
+}
+
+@media (max-width: 768px) {
   .mini-header h2 {
     font-weight: 500;
     font-size: 32.5px;
     line-height: 40px;
     color: #1976d2;
   }
-  .dufanvar__service {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .dufanvar_service p {
+    line-height: 35px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  .dufanvar_service_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 50px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .dufanvar__service [class^='dufanvar__service_'] {
-    width: 80%;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 15px;
-  }
-  .dufanvar__service img {
-    width: 100%;
-  }
-  .dufanvar__service .dufanvar__service_two_image, .dufanvar__service .dufanvar__service_four_image, .dufanvar__service .dufanvar__service_six_image {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .dufanvar__service .dufanvar__service_two_article, .dufanvar__service .dufanvar__service_four_article, .dufanvar__service .dufanvar__service_six_article {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .back-to-top {
-    background-color: #c4c4c4;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 45px;
-    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .back-to-top h4 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22px;
+  .dufanvar_service_container_image {
+    width: 80%;
+  }
+  .dufanvar_service_container_image img {
+    width: 100%;
+  }
+  .dufanvar_service_container_article {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    border: #000000 2px solid;
+    display: none;
+  }
+  .dufanvar_service_container_article_cont {
+    width: 80%;
+    margin-top: 0%;
   }
 }
 
-.footer {
-  margin-top: 0;
+@media (max-width: 320px) {
+  .mini-header h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1976d2;
+  }
 }
-/*# sourceMappingURL=service_style.css.map */
+/*# sourceMappingURL=service_one_style.css.map */
