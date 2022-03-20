@@ -9,37 +9,39 @@
     flex-direction: column;
     align-items: center;
 
-    p{
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 42px;
-        color: rgba($color: #000000, $alpha: 0.6);
-    }
-
+    
     &_container{
-        display: flex;
-        justify-content: center;
+        margin: auto;
+        width: 90%;
+
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 42px;
+            color: rgba($color: #000000, $alpha: 0.6);
+            margin-bottom: 10px;
+        }
+      
 
         &_image{
-            flex-basis: 40%;
-            padding-bottom: 5%;
+            float: left;
+            padding-right: 3.5%;
+            padding-bottom: 0.5%;
         
 
             img{
                 width: 100%;
             }
         }
+        &_image::after{
+            clear: both;
+            display: block;
+            content: '';
+        }
 
         &_article{
-            flex-basis: 40%;
-            padding-left: 5%;
-
+            text-align: justify;
         }
-    }
-
-    &_container_article_cont{
-        width: 80%;
-        margin-top: -3.5%;
     }
 
 
@@ -61,21 +63,11 @@
 
     .dufanvar_service{
 
-        p{
-            line-height: 35px;
-            font-size: 1em;
-            color: rgba($color: #000000, $alpha: 0.7);
-            text-align: center;
-            
-        }
-
         &_container{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
 
             &_image{
-                width: 80%;
+                float: none;
+                margin-bottom: 20px;
                 img{
                     width: 100%;
                 }
@@ -83,24 +75,23 @@
             }
 
             &_article{
-                flex-basis: 80%;
-                border: #000000 2px solid;
-                display: none;
-            
+                p{
+                    line-height: 35px;
+                    font-size: 1em;
+                    color: rgba($color: #000000, $alpha: 0.7);
+                    text-align: left;
+                    
+                }
             }
 
-        }
-
-        &_container_article_cont{
-            width: 80%;
-            margin-top: 0%;
         }
     }
 }
 
-@media (max-width:320px){
+@media (max-width:375px){
     .mini-header{
-
+        justify-content: center;
+        padding-left: 0;
         h2{
         font-weight: 500;
         font-size: 28px;

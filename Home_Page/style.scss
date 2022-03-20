@@ -3,6 +3,7 @@
 
 
 .header{
+    // height: max(700px, 100vh);
     height: 100vh;
 }
 
@@ -15,7 +16,7 @@
     align-items: center;
     position: absolute;
     top: 42%;
-    left: 0%;
+    // left: 0%;
 
     h3{
         font-family: $quantico;
@@ -188,6 +189,10 @@
 }
 
 @media (max-width:$mobile) {
+
+    .header{
+        height: 550px;
+    }
     
 
     .header__textbox{
