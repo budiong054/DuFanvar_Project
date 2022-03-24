@@ -1,0 +1,176 @@
+@import 'config';
+@import 'utilities';
+@import 'utilities_header';
+
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+ 
+
+.dufanvar__account{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 960px;
+
+    &__form{
+        background-color: rgba($color: #A7D4ED, $alpha: 0.26);
+        width: 60%;
+        border-radius: 10px 10px 10px 0px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+        &_d_figure{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-bottom: 20px;
+    
+            .image-text{
+                font-size: $fs-1;
+                line-height: $lh-1;
+            }
+        }
+    
+        [class^='dufanvar__account__form___']{
+            margin-bottom: 10px;
+            margin-left: 40px;
+
+        }
+    
+        &__section{
+            margin: 25px 0;
+            padding-left: 40px;
+            border-top: 1px rgba($color: #000000, $alpha: 0.2) solid;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+        }
+        h2{
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 50px;
+        }
+    
+        .label{
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: $fs-1;
+            line-height: $lh-1;
+        }
+    
+        input{
+            display: block;
+            width: 350px;
+            height: 40px;
+            padding: 5px 15px;
+            border-radius: 10px 10px 10px 0px;
+            margin: 3px 0px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+            outline: none;
+        }
+    
+        .btn{
+            color: $secondary-color;
+            background: $teritary-color;
+            border-radius: 10px 10px 10px 0;
+            border: none;
+            outline: none;
+            padding: 8px 15px;
+            width: 170px;
+            margin-top: 25px;
+            margin-left: 40px;
+            font-family: $poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: $fs-1;
+            line-height: $lh-1;
+            margin-bottom: 20px;
+            
+        }
+    }
+}
+
+@media (max-width:$mobile){
+    .header{
+        min-height: 550px;
+    }
+
+    .mini-header{
+
+        h2{
+        font-weight: 500;
+        font-size: 32.5px;
+        line-height: 40px;
+        color: $teritary-color;
+        }
+    }
+
+    .dufanvar__account__form{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 600px){
+    .header{
+        min-height: 550px;
+    }
+    .dufanvar__account{
+        height: 880px;
+
+        &__form{
+            width: 90%;
+
+            &__section{
+                padding-left: 20px;
+            }
+
+            [class^='dufanvar__account__form___']{
+                margin-left: 20px;
+    
+            }
+
+            h2{
+                font-size: 18px;
+                line-height: 35px;
+            }
+            .label{
+                font-size: 14px;
+                line-height: 25px;
+            }
+            
+            input{
+                width:80%;
+                height: 35px;
+            }
+            .btn{
+                margin-left: 20px;
+                font-size: 14px;
+                line-height: 25px;
+                padding: 5px 10px;
+                width: 125px;
+            }
+        }
+
+        
+    }
+}
+@media (max-width:375px){
+    .mini-header{
+        justify-content: center;
+        padding-left: 0;
+        h2{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: $teritary-color;
+        }
+    }
+
+}

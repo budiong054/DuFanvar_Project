@@ -78,6 +78,9 @@
 
 
 @media (max-width:$mobile){
+    .header{
+        min-height: 550px;
+    }
     .mini-header{
 
         h2{

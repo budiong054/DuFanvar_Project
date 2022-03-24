@@ -11,7 +11,7 @@ body{
 
 .active{
     background-color: $secondary-color;
-    border-radius: 4px 0 0 4px;
+    border-radius: 0 4px 4px 0;
 }
 
 #black{
@@ -29,7 +29,7 @@ body{
 
     
     
-    &_container{
+    .header_container{
         display: flex;
         justify-content: center;
 

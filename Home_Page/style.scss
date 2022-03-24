@@ -189,11 +189,10 @@
 }
 
 @media (max-width:$mobile) {
-
-    .header{
-        height: 550px;
-    }
     
+    .header{
+        min-height: 550px;
+    }
 
     .header__textbox{
             width: 90%;
@@ -332,6 +331,11 @@
 
     .login{
         display: none;
+    }
+}
+@media (max-width:600px){
+    .header{
+        min-height: 550px;
     }
 }
 
