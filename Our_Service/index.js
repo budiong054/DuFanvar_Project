@@ -15,7 +15,7 @@
     menu.addEventListener('click', displayOpen)
 
     const displayClose = () => {
-    mobileNavContainer.style.marginLeft = '-500%';
+    mobileNavContainer.style.marginLeft = '-300%';
     // header.style.backgroundImage = 'url(https://github.com/budiong054/DuFanvar_Project/blob/main/Images/green_vegetation.png?raw=true)';
     }
 
