@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.email_verification_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff6e40;
+  width: 100%;
+  height: 100vh;
+}
+
+.email_verification_section_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px 10px 10px 0;
+}
+
+.email_verification_section_inner h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  /* 24px */
+  line-height: 2rem;
+  letter-spacing: 0.025em;
+  color: #1976d2;
+}
+
+.email_verification_section_inner .input_box_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.email_verification_section_inner .input_box_container .input_box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+}
+
+.email_verification_section_inner p {
+  font-size: 1.05rem;
+  /* 16px */
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.email_verification_section_inner .light {
+  font-weight: 400;
+}
+
+.email_verification_section_inner .bold {
+  font-weight: 600;
+}
+
+.email_verification_section_inner .emailbtn {
+  color: #ffffff;
+  background: #1976d2;
+  border-radius: 10px 10px 10px 0;
+  border: none;
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  width: 250px;
+  height: 32.5px;
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  .email_verification_section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .email_verification_section_inner {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    height: 45%;
+  }
+  .email_verification_section_inner h2 {
+    font-size: 1.125rem;
+  }
+  .email_verification_section_inner p {
+    font-size: 1rem;
+  }
+  .email_verification_section .input_box_container {
+    gap: 20px;
+  }
+  .email_verification_section .input_box_container .input_box {
+    width: 27.5px;
+    height: 27.5px;
+  }
+  .email_verification_section .emailbtn {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .email_verification_section {
+    background-image: url(/Images/email-verification-bg.jpg);
+    min-height: 800px;
+  }
+}
+/*# sourceMappingURL=emailstyle.css.map */

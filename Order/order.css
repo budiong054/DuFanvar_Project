@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: rgba(226, 223, 223, 0.4);
+}
+
+.button-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-container .seeBtn {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 230px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.addBtn {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 130px;
+}
+
+.description {
+  position: relative;
+  top: 0;
+  padding: 15px;
+}
+
+.description h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: -5px;
+}
+
+.figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 200px;
+}
+
+.dufanvar_juice {
+  width: 90%;
+  background-color: #d9d9d9;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.dufanvar_juice .text-center {
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.dufanvar_juice .des-width {
+  width: 45%;
+  height: 160px;
+}
+
+.dufanvar_juice_row-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 27% 30%;
+      grid-template-columns: 30% 27% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.dufanvar_juice_row-3 [class^='dufanvar_juice_row-3_'] {
+  background-color: #ffffff;
+  border-radius: 12.5px;
+}
+
+.dufanvar_juice_row-3_one img {
+  width: 70%;
+  height: 175px;
+  margin-bottom: 10px;
+}
+
+.dufanvar_juice_row-3_two img {
+  width: 60%;
+  height: 205px;
+}
+
+.dufanvar_juice_row-3_three img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 8px;
+}
+
+.dufanvar_juice_row-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44.75% 44.75%;
+      grid-template-columns: 44.75% 44.75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.dufanvar_juice_row-2 [class^='dufanvar_juice_row-2_'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #ffffff;
+  border-radius: 12.5px;
+}
+
+.dufanvar_juice_row-2 [class^='dufanvar_juice_row-2_'] .border-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  width: 55%;
+}
+
+.dufanvar_juice_row-2 .margin-bottom {
+  margin-bottom: 10px;
+}
+
+.dufanvar_juice_row-2_one img {
+  width: 62%;
+  margin-bottom: 30px;
+}
+
+.dufanvar_juice_row-2_two img {
+  width: 65%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-left: 107px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+.dufanvar_flakes-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (19.85%)[4];
+      grid-template-columns: repeat(4, 19.85%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.dufanvar_flakes-row [class^='dufanvar_flakes-row_'] {
+  background-color: #ffffff;
+  border-radius: 12.5px;
+}
+
+.dufanvar_flakes-row p {
+  margin-bottom: 5px;
+}
+
+.dufanvar_flakes-row_one img {
+  width: 65%;
+  margin-bottom: 10px;
+}
+
+.dufanvar_flakes-row_two img {
+  width: 52.5%;
+  margin-bottom: 10px;
+}
+
+.dufanvar_flakes-row_three img {
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+.dufanvar_flakes-row_four img {
+  width: 70%;
+  margin-bottom: 8px;
+}
+
+.dufanvar_biscuits_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (27%)[3];
+      grid-template-columns: repeat(3, 27%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+}
+
+.dufanvar_biscuits_row [class^='dufanvar_biscuits_row_'] {
+  background-color: #ffffff;
+  border-radius: 12.5px;
+}
+
+.dufanvar_biscuits_row .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dufanvar_biscuits_row_one img {
+  width: 70%;
+  margin-bottom: 8px;
+}
+
+.dufanvar_biscuits_row_two img {
+  width: 62.5%;
+  margin-bottom: 8px;
+}
+
+.dufanvar_biscuits_row_three img {
+  width: 90%;
+}
+
+.dufanvar_biscuits_row_four img {
+  width: 70%;
+  margin-bottom: -25px;
+}
+
+.dufanvar_biscuits_row_five img {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.dufanvar_biscuits_row_six img {
+  width: 90%;
+  margin-bottom: 27px;
+  height: 135px;
+}
+
+.dufanvar_wines-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (19.85%)[4];
+      grid-template-columns: repeat(4, 19.85%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.dufanvar_wines-row [class^='dufanvar_wines-row_'] {
+  background-color: #ffffff;
+  border-radius: 12.5px;
+}
+
+.dufanvar_wines-row p {
+  margin-bottom: 5px;
+}
+
+.dufanvar_wines-row_one img {
+  width: 18.5%;
+  margin-bottom: 5px;
+}
+
+.dufanvar_wines-row_two img {
+  width: 52.5%;
+  margin-bottom: 5px;
+}
+
+.dufanvar_wines-row_three img {
+  width: 48.5%;
+  margin-bottom: 5px;
+}
+
+.dufanvar_wines-row_four img {
+  width: 68.5%;
+  margin-bottom: 1px;
+}
+/*# sourceMappingURL=order.css.map */

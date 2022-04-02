@@ -1,0 +1,320 @@
+@import 'config';
+@import 'utilities';
+
+.border-bottom{
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    margin-bottom: -5px;
+}
+
+.figure{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+}
+
+.dufanvar_juice{
+    width: 90%;
+    background-color: #d9d9d9;
+    margin: auto;
+    border-radius: 10px;
+
+    .text-center{
+        text-align: center;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 60px;
+
+    }
+    
+
+    
+    .des-width{
+        width: 45%;
+        height: 160px;
+    }
+
+    
+
+    
+    &_row-3{
+        display: grid;
+        grid-template-columns: 30% 27% 30%;
+        justify-content: center;
+        gap: 30px;
+
+        [class^='dufanvar_juice_row-3_']{
+            background-color: $secondary-color;
+            border-radius: 12.5px;
+        }
+        
+        &_one{
+
+            img{
+                width: 70%;
+                height: 175px;
+                margin-bottom: 10px;
+                
+            }
+        }
+
+        &_two{
+
+            img{
+                width: 60%;
+                height: 205px;
+                
+            }
+        }
+
+        &_three{
+
+            img{
+                width: 100%;
+                height: 180px;
+                margin-bottom: 8px;
+                
+            }
+        }
+        
+    }
+
+    
+    &_row-2{
+        display: grid;
+        grid-template-columns: 44.75% 44.75%;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+
+        [class^='dufanvar_juice_row-2_']{
+            display: flex;
+            align-items: flex-end;
+            background-color: $secondary-color;
+            border-radius: 12.5px;
+
+            .border-right{
+                border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+                width: 55%;
+            }
+            
+        }
+        
+        .margin-bottom{
+            margin-bottom: 10px;
+        }
+
+        &_one{
+        
+            img{
+                width: 62%;
+                margin-bottom: 30px;
+            }
+        }
+
+        &_two{
+          
+            img{
+                width: 65%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+h2{
+    margin-left: 107px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.dufanvar_flakes{
+
+    &-row{
+        display: grid;
+        grid-template-columns: repeat(4, 19.85%);
+        justify-content: center;
+        gap: 15px;
+
+        [class^='dufanvar_flakes-row_']{
+        
+            background-color: #ffffff;
+            border-radius: 12.5px;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+
+        &_one{
+        
+
+            img{
+                width: 65%;
+                margin-bottom: 10px;
+            
+            }
+        }
+
+        &_two{
+        
+
+            img{
+                width: 52.5%;
+                margin-bottom: 10px;
+            
+            }
+        }
+
+        &_three{
+        
+
+            img{
+                width: 100%;
+                margin-bottom: -20px;
+            
+            }
+        }
+
+        &_four{
+        
+
+            img{
+                width: 70%;
+                margin-bottom: 8px;
+            
+            }
+        }
+    }
+}
+
+.dufanvar_biscuits{
+    &_row{
+        display: grid;
+        grid-template-columns: repeat(3, 27%);
+        justify-content: center;
+        gap: 12px;
+
+        [class^='dufanvar_biscuits_row_']{
+            background-color: $secondary-color;
+            border-radius: 12.5px;
+            
+        }
+
+        .price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &_one{
+        
+
+            img{
+                width: 70%;
+                margin-bottom: 8px;
+            }
+        }
+
+        &_two{
+
+            img{
+                width: 62.5%;
+                margin-bottom: 8px;
+            }
+        }
+
+        &_three{
+        
+            img{
+                width: 90%;
+            }
+        }
+
+        &_four{
+        
+            img{
+                width: 70%;
+                margin-bottom: -25px;
+            }
+        }
+        
+        &_five{
+
+            img{
+                width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+
+        &_six{
+        
+            img{
+                width: 90%;
+                margin-bottom: 27px;                
+                height: 135px;
+            }
+        }
+    }
+}
+
+.dufanvar_wines{
+
+    &-row{
+        display: grid;
+        grid-template-columns: repeat(4, 19.85%);
+        justify-content: center;
+        gap: 15px;
+
+        [class^='dufanvar_wines-row_']{
+        
+            background-color: #ffffff;
+            border-radius: 12.5px;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+
+        &_one{
+        
+
+            img{
+                width: 18.5%;
+                margin-bottom: 5px;
+            
+            }
+        }
+
+        &_two{
+        
+
+            img{
+                width: 52.5%;
+                margin-bottom: 5px;
+            
+            }
+        }
+
+        &_three{
+        
+
+            img{
+                width: 48.5%;
+                margin-bottom: 5px;
+            
+            }
+        }
+
+        &_four{
+        
+
+            img{
+                width: 68.5%;
+                margin-bottom: 1px;
+            
+            }
+        }
+    }
+}
+
+

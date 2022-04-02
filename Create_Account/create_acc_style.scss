@@ -1,0 +1,322 @@
+@import 'config';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    // font-family: $poppins;
+}
+body{
+    font-family: $poppins;
+}
+
+
+.create_acc__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+
+    &__wrap{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo{
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            color: $secondary-color;
+            height: 90px;
+            font-family:$poppins;
+            font-weight: 400;
+            // font-size: 50px;
+            // line-height: 75px;
+            font-size: 2rem; /* 36px */
+            line-height: 2.5rem; /* 40px */
+            /* identical to box height */
+
+            // border: rgb(255, 252, 252) solid 2px;
+
+            img{
+                // border: rgb(255, 252, 252) solid 2px;
+                width: 135px;
+                height: 110px;
+                // height: 100%;
+            }
+
+            &__text{
+                margin-left: -30px;
+            }
+        }
+
+        ul{
+            display: flex;
+            // gap: 5px;
+
+            .cre_btn{
+                // border: rgb(255, 252, 252) solid 2px;
+                background-color: $teritary-color;
+                border-radius: 10px 10px 10px 0;
+                margin-left: 10px;
+                width: 180px;
+                text-align: center;
+            }
+
+            li{
+                // border: rgb(255, 252, 252) solid 2px;
+                padding: 10px 20px;
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    color: $secondary-color;
+                    font-family: $roboto;
+
+                    font-weight: 400;
+                    // font-size: 30px;
+                    // line-height: 35px;
+                    font-size: 1.5rem; /* 24px */
+                    line-height: 2rem; /* 32px */
+                }
+            }
+        }
+    }
+
+}
+
+.create_acc__form_logo{
+    display: none;
+}
+
+.create_acc__container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-image: url(/Images/create-account-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    // width: 1044px;
+    width: 100%;
+    // min-width: ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    // min-height: 700px;
+
+    .create_acc__form{
+        border: 3px dashed #000000;
+        // border: 2px dashed #000000;
+        border-radius: 15px 15px 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 90%;
+        max-height: 700px;
+
+
+        .form{
+            width: 62.5%;
+            height:90%;
+            // border: #000000 2px solid;
+
+            h3{
+                font-weight: 600;
+                // font-size: 30px;
+                // line-height: 45px;
+                font-size: 1.75rem; /* 24px */
+                line-height: 2rem;
+                letter-spacing: 0.025em;
+                color: $teritary-color;
+                text-align: center;
+                }
+
+            .input{
+                width: 100%;
+                height: 40px;
+                border: none;
+                outline: none;
+                margin-top: 20px;
+                background: rgba(155, 184, 197, 0.2);
+                border-radius: 10px 10px 10px 0px;
+                padding-left: 15px;
+                font-size: 1.025rem;
+                display: block;
+            }
+
+            .loginbtn{
+                width: 100%;
+                height: 40px;
+                // outline: none;
+                border: none;
+                // color: $secondary-color;
+                background-color: $teritary-color;
+                border-radius: 10px 10px 10px 0px;
+                margin-bottom: 2.5px;
+                margin-top: 25px;
+                font-weight: 400;
+                font-size: 1rem; /* 18px */
+                line-height: 1.75rem; /* 28px */
+                // font-size: 18px;
+                // line-height: 21px;
+                //                 font-weight: 400;
+                // font-size: 20px;
+                // line-height: 30px;
+                /* identical to box height */
+
+
+                color: rgba(0, 0, 0, 0.42);
+            }
+
+            .or{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 400;
+                // font-size: 14px;
+                // line-height: 16px;
+                font-size: 0.875rem; /* 14px */
+                line-height: 1.25rem;
+                color: rgba(0, 0, 0, 0.42);
+
+                div{
+                    flex-basis: 46%;
+                    border-bottom: 1.5px solid rgba(0, 0, 0,0.33);
+                    outline: none;
+                }
+            }
+
+            .signin{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FFFFFF;
+                border: 1.5px solid rgba(0, 0, 0, 0.1);
+                width: 100%;
+                height: 40px;
+                margin-top: 10px;
+                border-radius: 10px 10px 10px 0px;
+                font-family: $roboto;
+                font-weight: 500;
+                font-size: 1.125rem; /* 18px */
+                line-height: 1.75rem; /* 28px */
+                margin-bottom: 10px;
+
+                p{
+                    padding-left: 15px;
+                }
+
+            }
+
+            .inside{
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.015rem;
+                line-height: 1.75rem;
+                // font-size: 20px;
+                // line-height: 30px;
+                /* identical to box height */
+
+
+                color: rgba(0, 0, 0, 0.58);
+
+
+            }
+
+        }
+    }
+}
+.outside{
+    display: none;
+}
+
+
+
+@media (max-width:768px){
+    .create_acc__header{
+        display: none;
+    }
+    .create_acc__logo{
+    
+
+        // border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: -50px;
+        font-family: $poppins;
+
+
+        img{
+            // border: 2px solid black;
+            width: 60%;
+        }
+        h3{
+            // border: 2px solid black;
+            font-weight: 400;
+            color: $secondary-color;
+            margin-top: -30px;
+            margin-bottom: 35px;
+            // font-size: 50px;
+            // line-height: 75px;
+            font-size: 2.5rem; /* 36px */
+            line-height: 2.5rem; /* 40px */
+        }
+    }
+
+    .create_acc__container_form{
+        background-image: url(/Images/create-account-mobile-bg.jpg);
+        // height: 700px;
+        min-height: 700px;
+        flex-direction: column;
+
+        .create_acc__form{
+            border: none;
+            // flex-direction: column;
+            background-color: $secondary-color;
+            width: 70%;
+            height: 580px;
+
+            .form{
+                width: 80%;
+
+            }
+
+            .inside{
+                // margin-top: 40px;
+            }
+        }
+    }
+}
+@media (max-width:600px){
+
+    .create_acc__form{
+        border: none;
+        // flex-direction: column;
+        background-color: $secondary-color;
+        width: 90%;
+        height: 540px;
+
+        .form{
+            width: 90%;
+
+        }
+    }
+
+    .inside{display: none;}
+
+    .outside{
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.945rem;
+        line-height: 1.5rem;
+        display: block;
+        // font-size: 20px;
+        // line-height: 30px;
+        /* identical to box height */
+        margin-top: 20px;
+        color: $primary-color;
+    }
+}

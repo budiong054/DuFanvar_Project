@@ -4,42 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quantico:ital@1&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginstyle.css">
     <title>Login</title>
 </head>
 <body>
     <section class="login__header">
-        <div class="login__header__logo">
-            
-        </div>
-        <div class="login__header__nav-links">
-
+        <div class="login__header__wrap">
+            <div class="login__header__wrap__logo">
+                <a href="/DuFanvar_Project/Home_Page/index.html">
+                <img src="/Images/dufanvar_small_logo.png" alt="dufanvar_logo">
+                </a>
+                <span class="login__header__wrap__logo__text">DuFanvar</span>
+            </div>
+            <div class="login__header__wrap__nav-links">
+                <ul>
+                    <li><a href="/DuFanvar_Project/Home_Page/index.html">Home</a></li>
+                    <li><a href="/DuFanvar_Project/Our_Service/index.html">Our Services</a></li>
+                    <li class="cre_btn"><a href="/DuFanvar_Project/Create_Account/index.html">Create an account</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="login__form">
+        <div class="login__form__logo">
+            <img src="/Images/dufanvar_logo.png" alt="DuFanvar_logo">
+            <h3>DuFanvar</h3>  
+        </div>
+        
         <div class="login__form__wrap-inner">
             <div class="login__form__wrap-outer">
-                <img src="/Images/DuFanvar_logo.png" alt="DuFanvar_logo">
-                <h3>DuFanvar</h3>
-                <form action="">
-                    <h3>Login</h3>
-                    <p>Sign in to your account</p>
-                    <input type="email" name="" id="" placeholder="Email">
-                    <input type="password" name="" id="" placeholder="Password">
-                    <input type="checkbox" name="" id=""><p class="small">Remember me</p>
-                    <p class="small">Forgot password</p>
+                <form action="" class="form">
+                    <div class="form_header">
+                        <h3>Login</h3>
+                        <p>Sign in to your account</p>
+                    </div>
+                    
+                    <input type="email" name="" id="" placeholder="Email" class="input">
+                    <input type="password" name="" id="" placeholder="Password" class="input">
+                    <div class="remember_password">
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id=""><p>Remember me</p>
+                        </div>
+                        <p class="small">Forgot password</p>
+                    </div>
+                   
 
-                    <button type="button">Login</button>
-                    <hr> Or <hr>
+                    <button type="button" class="loginbtn">Log in</button>
 
-                    <button type="button">
-                        <img src="" alt="">
+                    <div class="or">
+                        <div></div> Or <div></div>
+                    </div>
+                    <!-- <hr> Or <hr> -->
+
+                    <div class="signin">
+                        <img src="/Images/flat-color-icons_google.png" alt="google icon" width="25" height="25">
                         <p class="bold">Sign in with Google</p>
-                    </button>
-                    <p class="medium">Don't have an account?</p>
-                    <p class="bold blue">Create an Account here</p>
+                    </div>
+                    <div class="inner-account">
+                        <p class="medium">Don't have an account?</p>
+                        <a href="/DuFanvar_Project/Create_Account/index.html"><p class="bold blue">Create an Account here</p></a>
+                    </div>
                 </form>
             </div>
+        </div>
+
+        <div class="outer-account">
+            <p>Don't have an account? <a href="/DuFanvar_Project/Create_Account/index.html">Register</a></p>
+            <p>Forgot password</p>
         </div>
     </section>
 </body>

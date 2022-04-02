@@ -16,6 +16,7 @@
     align-items: center;
     position: absolute;
     top: 42%;
+    // z-index: -1;
     // left: 0%;
 
     h3{
@@ -235,10 +236,7 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            background-image: url(https://github.com/budiong054/DuFanvar_Project/blob/main/Images/Rectangle-194.png?raw=true);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            
             height: 650px;
             margin-bottom: 70px;
             
@@ -336,6 +334,12 @@
 @media (max-width:600px){
     .header{
         min-height: 550px;
+    }
+    .about_dufanvar__wrap{
+        background-image: url(https://github.com/budiong054/DuFanvar_Project/blob/main/Images/Rectangle-194.png?raw=true);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
