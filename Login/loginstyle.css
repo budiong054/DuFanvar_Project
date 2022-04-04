@@ -117,13 +117,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: auto;
   margin-top: -50px;
   font-family: "Poppins", sans-serif;
 }
 
+.login__form__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .login__form__logo img {
-  width: 60%;
+  width: 65%;
 }
 
 .login__form__logo h3 {
@@ -337,7 +349,6 @@
   font-size: 1.125rem;
   /* 18px */
   line-height: 1.75rem;
-  /* identical to box height */
   color: #1976D2;
   margin: 10px 0;
 }
@@ -366,6 +377,9 @@
 }
 
 @media (max-width: 600px) {
+  .login__form__logo img {
+    width: 55%;
+  }
   .login__form__wrap-inner {
     width: 85%;
     height: 455px;
@@ -387,6 +401,13 @@
   }
   .login__form__wrap-inner .form .small {
     display: none;
+  }
+  .login__form__wrap-inner .form .loginbtn {
+    font-size: 1rem;
+    height: 35px;
+  }
+  .login__form__wrap-inner .form .signin {
+    font-size: 1rem;
   }
   .login__form__wrap-outer {
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.12);

@@ -94,23 +94,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: auto;
         margin-top: -50px;
         font-family: $poppins;
 
+        a{
+            display: flex;
+            justify-content: center;
+        }
 
         img{
-            // border: 2px solid black;
-            width: 60%;
+            width: 65%;
         }
         h3{
-            // border: 2px solid black;
             font-weight: 400;
             color: $secondary-color;
             margin-top: -30px;
             margin-bottom: 35px;
-            // font-size: 50px;
-            // line-height: 75px;
             font-size: 2.5rem; /* 36px */
             line-height: 2.5rem; /* 40px */
         }
@@ -119,9 +120,7 @@
     &__wrap-inner{
         background-color: #ffc107;
         width: 45%;
-        // height: 65%;
         height: 520px;
-        // height: 55%;
         position: relative;
         top: 0;
         border-radius: 5px;
@@ -133,9 +132,7 @@
         width: 100%;
         height: 100%;
         position: relative;
-        // top: -4.5%;
         top: -12.5px;
-        // left: -2%;
         left: -13.5px;
         display: flex;
         align-items: center;
@@ -144,10 +141,6 @@
         border-radius: 5px;
 
         .form{
-            // display: flex;
-            // align-items: center;
-            // flex-direction: column;
-            // border: 2px solid black;
             width: 62.5%;
             height: 85%;
 
@@ -161,8 +154,6 @@
 
                 h3{
                     font-weight: 700;
-                    // font-size: 50px;
-                    // line-height: 59px;
                     font-size: 2.25rem; /* 36px */
                     line-height: 2.5rem; /* 40px */
                     letter-spacing: 0.025em;
@@ -174,17 +165,11 @@
                     font-weight: 400;
                     font-size: 1.125rem; /* 18px */
                     line-height: 1.75rem; /* 28px */
-                    // font-size: 20px;
-                    // line-height: 23px;
-
                     color: #908F8F;
                 }
 
 
             }
-            // input{
-            //     // margin-bottom: 5px;
-            // }
 
             .input{
                 width: 100%;
@@ -213,8 +198,6 @@
                 }
                 p{
                     font-weight: 300;
-                    // font-size: 14px;
-                    // line-height: 16px;
                     font-size: 0.875rem; /* 14px */
                     line-height: 1.25rem;
 
@@ -226,7 +209,6 @@
             .loginbtn{
                 width: 100%;
                 height: 40px;
-                // outline: none;
                 border: none;
                 color: $secondary-color;
                 background-color: $teritary-color;
@@ -235,9 +217,6 @@
                 font-weight: 500;
                 font-size: 1.125rem; /* 18px */
                 line-height: 1.75rem; /* 28px */
-                // font-size: 18px;
-                // line-height: 21px;
-
             }
 
             .or{
@@ -245,8 +224,6 @@
                 justify-content: space-between;
                 align-items: center;
                 font-weight: 400;
-                // font-size: 14px;
-                // line-height: 16px;
                 font-size: 0.875rem; /* 14px */
                 line-height: 1.25rem;
                 color: rgba(0, 0, 0, 0.78);
@@ -284,8 +261,6 @@
 
             .medium{
                 font-weight: 500;
-                // font-size: 14px;
-                // line-height: 16px;
                 font-size: 0.875rem; /* 14px */
                 line-height: 1.25rem;
 
@@ -296,9 +271,6 @@
                 font-weight: 500;
                 font-size: 1.125rem; /* 18px */
                 line-height: 1.75rem;
-                // font-size: 18px;
-                // line-height: 21px;
-                /* identical to box height */
                 color: #1976D2;
                 margin: 10px 0;
             }
@@ -319,7 +291,7 @@
     .login__form{
         height: 900px;
         &__logo{
-            // margin-top: 0px;
+
             img{
                 width: 70%;
             }
@@ -340,6 +312,12 @@
 @media (max-width:600px){
     .login__form{
 
+        &__logo{
+
+            img{
+                width: 55%;
+            }
+        }
         &__wrap-inner{
             width: 85%;
             height: 455px;
@@ -369,6 +347,14 @@
                 .small{
                     display: none;
                 }
+
+                .loginbtn{
+                    font-size: 1rem;
+                    height: 35px;
+                }
+                .signin{
+                    font-size: 1rem;
+                }
             }
         }
         &__wrap-outer{
@@ -383,8 +369,6 @@
             margin-top: 15px;  
             font-family: 'Poppins';
             font-weight: 400;
-            // font-size: 13px;
-            // line-height: 20px;
             font-size: 0.945rem; /* 14px */
             line-height: 1.25rem;
 
