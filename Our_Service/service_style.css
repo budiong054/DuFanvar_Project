@@ -407,7 +407,7 @@ body {
 
 .header {
   height: calc(100vh - 76px);
-  min-height: 550px;
+  min-height: 474px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +457,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 550px;
 }
 
 .dufanvar__service {

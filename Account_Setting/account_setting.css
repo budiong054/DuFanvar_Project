@@ -408,6 +408,7 @@ body {
 
 .header {
   height: calc(100vh - 76px);
+  min-height: 474px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
