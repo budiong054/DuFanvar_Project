@@ -45,6 +45,10 @@ body{
                 img{
                     width: 100%;
                 }
+
+                .logo-text{
+                    display: none;
+                }
             }
     
             &__nav-bar{
@@ -221,6 +225,22 @@ body{
                 align-items: center;
                 img{
                     width: 100%;
+                }
+
+                .logo-text{
+                    display: flex;
+                    justify-content: center;
+
+                    h1{
+                        font-family: $poppins;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 1.875rem; /* 30px */
+                        line-height: 2.25rem; /* 36px */
+                        letter-spacing: 0.025em;
+                        color: #FFFFFF;
+                    }
+
                 }
             }
             &__nav-bar{
