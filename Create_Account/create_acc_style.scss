@@ -115,7 +115,9 @@ body{
         height: 90%;
         max-height: 700px;
 
-
+        .h3{
+            display: none;
+        }
         .form{
             width: 62.5%;
             height:90%;
@@ -237,30 +239,28 @@ body{
     .create_acc__header{
         display: none;
     }
-    .create_acc__logo{
-    
-
+    .create_acc__form_logo{
         // border: 2px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        margin-top: -50px;
+        margin-bottom: 10px;
         font-family: $poppins;
 
+        a{
+            display: flex;
+            justify-content: center;    
+        }
 
         img{
             // border: 2px solid black;
-            width: 60%;
+            width: 70%;
         }
         h3{
             // border: 2px solid black;
             font-weight: 400;
             color: $secondary-color;
-            margin-top: -30px;
-            margin-bottom: 35px;
-            // font-size: 50px;
-            // line-height: 75px;
+            margin-top: -35px;
             font-size: 2.5rem; /* 36px */
             line-height: 2.5rem; /* 40px */
         }
@@ -268,54 +268,82 @@ body{
 
     .create_acc__container_form{
         background-image: url(/Images/create-account-mobile-bg.jpg);
-        // height: 700px;
-        min-height: 700px;
+        height: auto;
+        min-height: 900px;
         flex-direction: column;
 
         .create_acc__form{
             border: none;
-            // flex-direction: column;
+            flex-direction: column;
             background-color: $secondary-color;
-            width: 70%;
-            height: 580px;
+            width: 85%;
+            height: 520px;
 
-            .form{
-                width: 80%;
-
+            .h3{
+                font-weight: 600;
+                letter-spacing: 0.025em;
+                color: $teritary-color;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 1.375rem;
+                line-height: 1.85rem;
+                display: block;
             }
+            .form{
+                width: 90%;
+                // border: #000000 solid 2px;
 
-            .inside{
-                // margin-top: 40px;
+                h3{
+                    display: none;
+                }
+                
+                .input{
+                    font-size: 0.945rem;
+                }
             }
         }
     }
 }
 @media (max-width:600px){
 
+    .create_acc__form_logo{
+
+        img{
+            width: 55%;
+        }
+        h3{
+            font-size: 2.25rem;
+        }
+    }
+
     .create_acc__form{
         border: none;
-        // flex-direction: column;
         background-color: $secondary-color;
         width: 90%;
         height: 540px;
 
         .form{
-            width: 90%;
-
+            
+            .loginbtn{
+                height: 35px;
+            }
+            .signin{
+                font-size: 1rem;
+                height: 35px;
+            }
         }
     }
 
-    .inside{display: none;}
+    .inside{
+        display: none;
+    }
 
     .outside{
         text-align: center;
         font-weight: 500;
-        font-size: 0.945rem;
+        font-size: 0.875rem;
         line-height: 1.5rem;
         display: block;
-        // font-size: 20px;
-        // line-height: 30px;
-        /* identical to box height */
         margin-top: 20px;
         color: $primary-color;
     }

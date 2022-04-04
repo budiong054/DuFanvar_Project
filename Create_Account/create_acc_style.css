@@ -130,6 +130,10 @@ body {
   max-height: 700px;
 }
 
+.create_acc__container_form .create_acc__form .h3 {
+  display: none;
+}
+
 .create_acc__container_form .create_acc__form .form {
   width: 62.5%;
   height: 90%;
@@ -245,7 +249,7 @@ body {
   .create_acc__header {
     display: none;
   }
-  .create_acc__logo {
+  .create_acc__form_logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -256,18 +260,24 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: auto;
-    margin-top: -50px;
+    margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
   }
-  .create_acc__logo img {
-    width: 60%;
+  .create_acc__form_logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .create_acc__logo h3 {
+  .create_acc__form_logo img {
+    width: 70%;
+  }
+  .create_acc__form_logo h3 {
     font-weight: 400;
     color: #ffffff;
-    margin-top: -30px;
-    margin-bottom: 35px;
+    margin-top: -35px;
     font-size: 2.5rem;
     /* 36px */
     line-height: 2.5rem;
@@ -275,7 +285,8 @@ body {
   }
   .create_acc__container_form {
     background-image: url(/Images/create-account-mobile-bg.jpg);
-    min-height: 700px;
+    height: auto;
+    min-height: 900px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -283,24 +294,54 @@ body {
   }
   .create_acc__container_form .create_acc__form {
     border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #ffffff;
-    width: 70%;
-    height: 580px;
+    width: 85%;
+    height: 520px;
+  }
+  .create_acc__container_form .create_acc__form .h3 {
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: #1976d2;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 1.85rem;
+    display: block;
   }
   .create_acc__container_form .create_acc__form .form {
-    width: 80%;
+    width: 90%;
+  }
+  .create_acc__container_form .create_acc__form .form h3 {
+    display: none;
+  }
+  .create_acc__container_form .create_acc__form .form .input {
+    font-size: 0.945rem;
   }
 }
 
 @media (max-width: 600px) {
+  .create_acc__form_logo img {
+    width: 55%;
+  }
+  .create_acc__form_logo h3 {
+    font-size: 2.25rem;
+  }
   .create_acc__form {
     border: none;
     background-color: #ffffff;
     width: 90%;
     height: 540px;
   }
-  .create_acc__form .form {
-    width: 90%;
+  .create_acc__form .form .loginbtn {
+    height: 35px;
+  }
+  .create_acc__form .form .signin {
+    font-size: 1rem;
+    height: 35px;
   }
   .inside {
     display: none;
@@ -308,10 +349,9 @@ body {
   .outside {
     text-align: center;
     font-weight: 500;
-    font-size: 0.945rem;
+    font-size: 0.875rem;
     line-height: 1.5rem;
     display: block;
-    /* identical to box height */
     margin-top: 20px;
     color: #000000;
   }
