@@ -295,6 +295,9 @@ body{
                 background-color: rgba(0, 0, 0, 0.85);
                 height: calc(100vh - 65px);
                 overflow: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 // z-index: 100;
             }
             ul{
@@ -315,6 +318,33 @@ body{
                     border: none;
                 }
             }
+
+            .logoutbtn{
+                align-self: center;font-weight: 500;
+                // font-size: 15px;
+                // line-height: 22px;              
+ 
+                
+
+                a{
+                    text-decoration: none;
+                    
+
+                    .log-out{
+                        background: #555A60;
+                        border-radius: 10px;
+                        font-size: 0.975rem; /* 14px */
+                        line-height: 1.25rem; /* 20px */
+                        color: #FFFBFB;
+                        width: 250px;
+                        height: 30px;
+                        margin-bottom: 10px;
+                        border: none;
+                    }
+                }
+
+            }
+
         }  
     }
     
