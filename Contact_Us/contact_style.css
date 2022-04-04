@@ -598,7 +598,7 @@ body {
   margin-bottom: 7.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .mini-header h2 {
     font-size: 2rem;
   }
